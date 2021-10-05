@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+:root {
+  --main-bg: rgb(39, 39, 39);
+  --black: rgb(0, 0, 0);
+  --light-bg: rgb(87, 87, 87);
+  --lighter-bg: #777777;
+  --lighterer-bg: #D8D8D8;
+  --special-w: #FFFFF0;
+}
+html {
+  /* background-color: var(--main-bg) */
+  background: linear-gradient(-45deg, var(--black), var(--main-bg));
+	background-size: 1000% 1000%;
+	animation: gradient 5s ease infinite;
+}
+
+h1 {
+  background: linear-gradient(-45deg, var(--main-bg), var(--lighter-bg));
+	background-size: 400% 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+	animation: gradient 5s ease infinite;
+  text-align: center;
+  font-size: 90px;
+  padding: 0px;
+  /* padding-bottom: 20px; */
+  font-family: Poppins
+}
+h2 {
+  background: linear-gradient(-45deg, var(--main-bg), var(--lighter-bg));
+	background-size: 400% 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+	animation: gradient 5s ease infinite;
+  text-align: center;
+  font-size: 35px;
+  padding-bottom: 20px;
+  font-family: Poppins
+}
+
+button { cursor: pointer }
+button[type=connect]{
+  border: 2px solid var(--lighter-bg);/*solid #1B7EFF;*/
+  border-width: 2.25px;
+  background-color: linear-gradient(-45deg, var(--main-bg), var(--lighter-bg));;
+  border-radius: 25px;
+  height: 40px;
+  text-align: center;
+  width: 100px;
+  color: var(--lighterer-bg);
+  font-family: Poppins;
+  transition: 0.6s;
+}
+button[type=mint]{
+  border: 2px solid var(--lighter-bg);/*solid #1B7EFF;*/
+  border-width: 2.25px;
+  background-color: linear-gradient(-45deg, var(--main-bg), var(--lighter-bg));;
+  border-radius: 25px;
+  text-align: center;
+  color: var(--lighterer-bg);
+  font-family: Poppins;
+  font-size: 30px;
+  transition: 0.6s;
+  padding-left: 20px;
+  height: 80px;
+  width: 200px;
+}
+
+p {
+  font-family: Poppins;
+  text-align: left; 
+  font-size: 25px;
+  padding-left: 20px;
+  color: var(--lighterer-bg);
+}
