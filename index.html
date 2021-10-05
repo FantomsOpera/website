@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Fantoms On Opera | Home</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" href="https://cloudflare-ipfs.com/ipfs/QmZ94FGfG8HfpzJ14Nk3W8XdWUnoXhwhuWa7UH47PdRgEk/imagesa/0.png"/>
+    <!-- Web3.js -->
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <!-- Ethers -->
+    <script charset="utf-8" src="https://cdn.ethers.io/scripts/ethers-v4.min.js" type="text/javascript"></script>
+    <!-- SweetAlert2 -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <button id="connect" type="connect" onclick="connect()">Connect</button>
+    <h1>Fantoms On Opera</h1>
+    <h2 id="connectText">Your address: N/A</h2>
+    <p>Welcome to Fantoms On Opera, a collection of 200 randomly generated NFTs on the Opera blockchain! There are a total of 1080 different combinations possible, but I only found 200 of them on the Opera blockchain...</p>
+    <p>Price: 10 FTM to mint, 7.5% comission on sales.</p>
+    <p>Listed on Artion, contract: <kbd>0x6e85f63449f090856ca5850d19611c50488bd7fd</kbd>. Testnet: <kbd>0x5860c2b5D63341986c6690A128Ad6C373a6F8432</kbd>.</p>
+    <button type="mint" id="mint" onclick="mint()">Mint!</button>
+    <p id="left"></p>
+    <p id="error"></p>
+    <p><a href="https://discord.gg/4cg7BMSa4G">Discord</a> | <a href="https://twitter.com/FantomsOpera">Twitter</a> | <a href="https://ftmscan.com/address/0x6e85f63449f090856ca5850d19611c50488bd7fd">FTMScan</a> | <a href="https://docs.fantom.foundation/tutorials/set-up-metamask"> Connect MetaMask to Fantom</a> | <a href="mailto: hello@fantoms.art">Get in contact!</a></p>
+    <script src="script.js"></script>
+  </body>
+</html>
